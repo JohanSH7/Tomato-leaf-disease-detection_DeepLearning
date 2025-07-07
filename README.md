@@ -30,16 +30,44 @@ Construir y entrenar un modelo CNN que clasifique correctamente imágenes de hoj
 - **Balance**: El dataset está completamente balanceado entre clases.
 
 ## ⚙️ Metodología
-- **Modelo base**: Red convolucional secuencial construida con **Keras**.
-- **Aumentos de datos**: Rotaciones, desplazamientos, zooms, flips, entre otros, para mejorar la generalización.
+- **Modelos evaluados**:
+  - ResNet-50
+  - MobileNetV3
+  - InceptionV3
+  - VGG16 (modelo con mejor desempeño)
+- **Aumentos de datos**: Rotaciones, desplazamientos, zooms, flips, contraste y brillo aleatorios, para mejorar la generalización.
 - **Optimización**:
   - Función de pérdida: `categorical_crossentropy`
   - Optimizador: `Adam`
 - **Evaluación**:
-  - Accuracy
-  - Precision, Recall y F1-Score (por clase)
+  - Accuracy global
+  - Métricas por clase: Precision, Recall, F1-Score
   - Matriz de confusión
-  - Evolución de la pérdida (`loss`) durante el entrenamiento
+  - Gráficas de evolución de precisión y pérdida (`loss`)
+
+## 🎥 Video de presentación
+Para conocer más detalles del proyecto, puedes ver el video explicativo en YouTube, donde mostramos los datos, el código, el proceso de entrenamiento y los resultados finales:
+
+🔗 [Ver video en YouTube](https://www.youtube.com/watch?v=qrI-pqzGsrM)
+
+## 👥 Integrantes
+- **Ana María Vega Angarita**  
+  Estudiante  
+  Departamento de Ingeniería de Sistemas  
+  Universidad de Antioquia  
+  ana.vega@udea.edu.co
+
+- **Maritza Tabarez Cárdenas**  
+  Estudiante  
+  Departamento de Ingeniería de Sistemas  
+  Universidad de Antioquia  
+  maritza.tabarezc@udea.edu.co
+
+- **Johan Sebastian Henao Cañas**  
+  Estudiante  
+  Departamento de Ingeniería de Sistemas  
+  Universidad de Antioquia  
+  johan.henao1@udea.edu.co
 
 ## 📈 Impacto esperado
 - Reducción de errores humanos en la detección de enfermedades.
